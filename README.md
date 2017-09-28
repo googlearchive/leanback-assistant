@@ -26,9 +26,11 @@ Need more information about getting started with Android TV? Check the [official
 
 ## Screenshots
 
-[![Screenshot](screenshots/assistant_popup.png)](https://raw.githubusercontent.com/googlesamples/leanback-assistant/master/screenshots/assistant_popup.png)
+[![Screenshot](screenshots/assistant_search.png)](https://raw.githubusercontent.com/googlesamples/leanback-assistant/master/screenshots/assistant_search.png)
 
-[![Screenshot](screenshots/atv-leanback-all.png)](https://raw.githubusercontent.com/googlesamples/leanback-assistant/master/screenshots/assistant_confirm.png)
+[![Screenshot](screenshots/assistant_hello.png)](https://raw.githubusercontent.com/googlesamples/leanback-assistant/master/screenshots/assistant_hello.png)
+
+[![Screenshot](screenshots/assistant_popup.png)](https://raw.githubusercontent.com/googlesamples/leanback-assistant/master/screenshots/assistant_popup.png)
 
 ## Support
 
