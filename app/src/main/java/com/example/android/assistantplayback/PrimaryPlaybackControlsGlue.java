@@ -41,7 +41,7 @@ import java.util.concurrent.TimeUnit;
  * row.
  */
 public class PrimaryPlaybackControlsGlue<T extends PlayerAdapter>
-        extends PausePlaybackTransportControlGluePatch<T> {
+        extends PlaybackTransportControlGlue<T> {
 
     private static final long TEN_SECONDS = TimeUnit.SECONDS.toMillis(10);
 
