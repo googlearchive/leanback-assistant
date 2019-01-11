@@ -16,16 +16,16 @@
 
 package com.example.android.assistantplayback;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 
 import com.example.android.assistantplayback.model.Movie;
 
 /** Loads {@link VideoDetailsFragment}. */
-public class VideoDetailsActivity extends Activity {
+public class VideoDetailsActivity extends FragmentActivity {
 
     public static Intent createIntent(Context context, Movie movie) {
         Intent intent = new Intent(context, VideoDetailsActivity.class);

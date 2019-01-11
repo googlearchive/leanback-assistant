@@ -18,8 +18,8 @@ package com.example.android.assistantplayback;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v17.leanback.app.VideoFragment;
-import android.support.v17.leanback.app.VideoFragmentGlueHost;
+import android.support.v17.leanback.app.VideoSupportFragment;
+import android.support.v17.leanback.app.VideoSupportFragmentGlueHost;
 import android.support.v17.leanback.media.MediaPlayerAdapter;
 import android.support.v17.leanback.media.PlaybackGlue;
 import android.support.v17.leanback.media.PlaybackTransportControlGlue;
@@ -37,7 +37,7 @@ import com.example.android.assistantplayback.playlist.MockPlaylistAdapterFactory
  * <br>
  * A movie's id is required to be passed in by id via the activity's extras.
  */
-public class PlaybackFragment extends VideoFragment {
+public class PlaybackFragment extends VideoSupportFragment {
 
     private static final String TAG = "PlaybackFragment";
 
@@ -103,7 +103,7 @@ public class PlaybackFragment extends VideoFragment {
                         getContext(),
                         new MediaPlayerAdapter(getContext()),
                         mSession.getController());
-        mPlayerGlue.setHost(new VideoFragmentGlueHost(this));
+        mPlayerGlue.setHost(new VideoSupportFragmentGlueHost(this));
         mPlayerGlue.addPlayerCallback(playWhenReadyPlayerCallback);
         mPlayerGlue.addPlayerCallback(playPausePlayerCallback);
 

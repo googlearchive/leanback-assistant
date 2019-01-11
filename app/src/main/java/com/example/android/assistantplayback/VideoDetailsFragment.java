@@ -20,8 +20,8 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v17.leanback.app.DetailsFragment;
-import android.support.v17.leanback.app.DetailsFragmentBackgroundController;
+import android.support.v17.leanback.app.DetailsSupportFragment;
+import android.support.v17.leanback.app.DetailsSupportFragmentBackgroundController;
 import android.support.v17.leanback.widget.AbstractDetailsDescriptionPresenter;
 import android.support.v17.leanback.widget.Action;
 import android.support.v17.leanback.widget.ArrayObjectAdapter;
@@ -47,7 +47,7 @@ import com.example.android.assistantplayback.model.Movie;
 /**
  * Displays a detailed view and the metadata about a movie such as title description, price, etc.
  */
-public class VideoDetailsFragment extends DetailsFragment {
+public class VideoDetailsFragment extends DetailsSupportFragment {
 
     public static final String EXTRA_MOVIE = "com.example.android.assistantplayback.extra.MOVIE";
 
@@ -57,14 +57,14 @@ public class VideoDetailsFragment extends DetailsFragment {
 
     private Movie mMovie;
     private ArrayObjectAdapter mAdapter;
-    private DetailsFragmentBackgroundController mDetailsBackground;
+    private DetailsSupportFragmentBackgroundController mDetailsBackground;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         mMovie = getActivity().getIntent().getParcelableExtra(EXTRA_MOVIE);
-        mDetailsBackground = new DetailsFragmentBackgroundController(this);
+        mDetailsBackground = new DetailsSupportFragmentBackgroundController(this);
 
         setupAdapter();
         setupDetailsOverviewRow();

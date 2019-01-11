@@ -16,12 +16,12 @@
 
 package com.example.android.assistantplayback;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 
 /** Main entrance into the app, loads {@link MainFragment}. */
-public final class MainActivity extends Activity {
+public final class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

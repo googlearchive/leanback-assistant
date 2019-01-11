@@ -17,6 +17,7 @@
 package com.example.android.assistantplayback;
 
 import android.os.Bundle;
+import android.support.v17.leanback.app.VerticalGridSupportFragment;
 import android.support.v17.leanback.widget.ArrayObjectAdapter;
 import android.support.v17.leanback.widget.OnItemViewClickedListener;
 import android.support.v17.leanback.widget.Presenter;
@@ -28,7 +29,7 @@ import com.example.android.assistantplayback.data.MockDatabase;
 import com.example.android.assistantplayback.model.Movie;
 
 /** Displays videos in a vertical grid. */
-public final class MainFragment extends android.support.v17.leanback.app.VerticalGridFragment {
+public final class MainFragment extends VerticalGridSupportFragment {
 
     private static final int NUM_COLUMNS = 3;
 
